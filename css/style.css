@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+body {
+  background-color: #E5E5E5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  box-sizing: content-box;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .logo {
+  position: relative;
+}
+@media screen and (max-width: 465px) {
+  header .container .logo {
+    left: 100px;
+  }
+}
+@media screen and (max-width: 403px) {
+  header .container .logo {
+    left: 60px;
+  }
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 465px) {
+  header nav ul {
+    display: none;
+  }
+}
+header nav ul li {
+  list-style: none;
+  margin-right: 50px;
+}
+@media screen and (max-width: 789px) {
+  header nav ul li {
+    margin-right: 30px;
+  }
+}
+@media screen and (max-width: 647px) {
+  header nav ul li {
+    margin-right: 15px;
+  }
+}
+@media screen and (max-width: 552px) {
+  header nav ul li {
+    margin-right: 10px;
+  }
+}
+header nav ul li:last-of-type {
+  background: #40A3F8;
+  border-radius: 5px;
+  padding: 11px 28px;
+  margin-right: 0;
+}
+@media screen and (max-width: 709px) {
+  header nav ul li:last-of-type {
+    padding: 7px 14px;
+  }
+}
+@media screen and (max-width: 552px) {
+  header nav ul li:last-of-type {
+    padding: 5px 10px;
+  }
+}
+header nav ul li:last-of-type a:last-of-type {
+  color: white;
+}
+header nav ul li:last-of-type a:last-of-type:hover {
+  color: #6E5F5F;
+}
+header nav ul li a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #6E5F5F;
+  opacity: 0.3;
+}
+@media screen and (max-width: 647px) {
+  header nav ul li a {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 552px) {
+  header nav ul li a {
+    font-size: 10px;
+  }
+}
+header nav ul li a:hover {
+  color: #40A3F8;
+  opacity: 1;
+}
+
+.main_banner .container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.main_banner .container .main_image {
+  position: relative;
+  right: -150px;
+}
+.main_banner .container .main_box {
+  max-width: 482px;
+}
+.main_banner .container .main_box h1 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 70px;
+  color: #3E3E3E;
+  max-width: 482px;
+}
+.main_banner .container .main_box .main_text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: rgba(117, 117, 117, 0.46);
+}
+
+/*# sourceMappingURL=style.css.map */
