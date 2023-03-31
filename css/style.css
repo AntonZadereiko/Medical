@@ -1,14 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-color: #E5E5E5;
+  background-color: #f5fbfa;
 }
 
 .container {
   max-width: 1200px;
   margin: auto;
-  box-sizing: content-box;
 }
 
+header {
+  padding-top: 10px;
+}
 header .container {
   display: flex;
   justify-content: space-between;
@@ -102,17 +110,81 @@ header nav ul li a:hover {
   opacity: 1;
 }
 
+.main_banner {
+  padding-top: 100px;
+}
 .main_banner .container {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
+}
+@media (max-width: 1293px) {
+  .main_banner .container {
+    flex-direction: column;
+    box-sizing: border-box;
+  }
 }
 .main_banner .container .main_image {
   position: relative;
-  right: -150px;
+  right: 130px;
+  bottom: 50px;
+  z-index: 1;
 }
-.main_banner .container .main_box {
-  max-width: 482px;
+@media (max-width: 1433px) {
+  .main_banner .container .main_image {
+    right: 200px;
+  }
+}
+@media (max-width: 1293px) {
+  .main_banner .container .main_image {
+    right: 80px;
+    bottom: -40px;
+  }
+}
+@media (max-width: 571px) {
+  .main_banner .container .main_image {
+    right: 115px;
+  }
+}
+@media (max-width: 467px) {
+  .main_banner .container .main_image {
+    right: 95px;
+  }
+}
+@media (max-width: 404px) {
+  .main_banner .container .main_image {
+    right: 75px;
+  }
+}
+@media (max-width: 359px) {
+  .main_banner .container .main_image {
+    right: 55px;
+  }
+}
+.main_banner .container .main_image:before {
+  content: url("../images/backfon.png");
+  position: absolute;
+  z-index: -1;
+  left: 210px;
+  top: -25px;
+}
+@media (max-width: 863px) {
+  .main_banner .container .main_image:before {
+    display: none;
+  }
+}
+.main_banner .container .main_image .image {
+  display: block;
+}
+@media (max-width: 1293px) {
+  .main_banner .container .main_image .image {
+    width: 100%;
+  }
+}
+@media (max-width: 590px) {
+  .main_banner .container .main_box {
+    max-width: 482px;
+  }
 }
 .main_banner .container .main_box h1 {
   font-family: "Roboto", sans-serif;
@@ -122,6 +194,32 @@ header nav ul li a:hover {
   line-height: 70px;
   color: #3E3E3E;
   max-width: 482px;
+  margin-bottom: 31px;
+}
+@media (max-width: 495px) {
+  .main_banner .container .main_box h1 {
+    font-size: 42px;
+    margin-left: 10px;
+  }
+}
+.main_banner .container .main_box h1 span {
+  color: #40A3F8;
+}
+.main_banner .container .main_box p {
+  margin-bottom: 50px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: rgba(117, 117, 117, 0.46);
+  max-width: 460px;
+}
+@media (max-width: 495px) {
+  .main_banner .container .main_box p {
+    font-size: 12px;
+    margin-left: 10px;
+  }
 }
 .main_banner .container .main_box .main_text {
   font-family: "Roboto", sans-serif;
@@ -130,6 +228,58 @@ header nav ul li a:hover {
   font-size: 14px;
   line-height: 30px;
   color: rgba(117, 117, 117, 0.46);
+}
+.main_banner .container .main_box .main_form {
+  background: #FFFFFF;
+  box-shadow: 0 4px 22px rgba(228, 245, 252, 0.3);
+  border-radius: 8px;
+  padding: 13px 13px 14px;
+  display: flex;
+  max-width: 566px;
+}
+@media (max-width: 590px) {
+  .main_banner .container .main_box .main_form {
+    display: block;
+    max-width: 320px;
+  }
+}
+@media (max-width: 495px) {
+  .main_banner .container .main_box .main_form {
+    max-width: 280px;
+    margin-left: 30px;
+  }
+}
+@media (max-width: 340px) {
+  .main_banner .container .main_box .main_form {
+    margin-left: 10px;
+  }
+}
+.main_banner .container .main_box .main_form input {
+  background: rgba(245, 246, 250, 0.52);
+  border-radius: 8px;
+  padding: 17px 25px 18px 30px;
+  margin-right: 20px;
+  border: none;
+}
+@media (max-width: 590px) {
+  .main_banner .container .main_box .main_form input {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+.main_banner .container .main_box .main_form button {
+  height: 59px;
+  width: 70px;
+  position: relative;
+  background: #40A3F8;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.main_banner .container .main_box .main_form button:before {
+  content: url("../images/search.svg");
+  position: absolute;
+  top: 10px;
+  left: 25%;
 }
 
 /*# sourceMappingURL=style.css.map */
