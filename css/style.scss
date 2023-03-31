@@ -123,13 +123,16 @@ header{
         right: 115px;
       }
       @media (max-width: 467px){
-        right: 95px;
+        right: 55px;
       }
       @media (max-width:404px){
-        right: 75px;
+        right: 40px;
       }
       @media (max-width:359px){
         right: 55px;
+      }
+      @media (max-width:340px){
+        right: 35px;
       }
 
       &:before{
@@ -236,6 +239,76 @@ header{
           left: 25%;
         }
       }
+      }
+    }
+  }
+}
+.steps{
+  padding: 75px 0 83px;
+  h3{
+    text-align: center;
+    margin-bottom: 51px;
+    font-family: $main_font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 70px;
+    color: #3E3E3E;
+  }
+  .steps_box{
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 990px){
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    @media (max-width: 668px){
+      flex-direction: column;
+      align-items: center;
+    }
+    .steps_items{
+      text-align: center;
+      margin-right: 15px;
+      @media (max-width: 668px){
+        margin-bottom: 15px;
+      }
+      &:nth-child(2){
+        .steps_image{
+            background-color: rgba(255, 180, 26, 0.12);
+          padding: 12px;
+        }
+      }
+      &:last-of-type{
+        .steps_image{
+          padding: 11px;
+        }
+      }
+      .steps_image{
+        margin: auto;
+        background-color: rgba(56, 175, 255, 0.1);
+        max-width: 80px;
+        padding: 16px;
+        border-radius: 50%;
+      }
+      .steps_title{
+        margin-top: 5px;
+        margin-bottom: 18px;
+        font-family: $main_font;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 32px;
+        color: #3D3D3F;
+      }
+      .steps_text{
+        font-family: $main_font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.5);
+        max-width: 319px;
       }
     }
   }
