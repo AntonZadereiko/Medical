@@ -281,6 +281,9 @@ header nav ul li a:hover {
   cursor: pointer;
   z-index: 2;
 }
+.main_banner .container .main_box .main_form button:hover {
+  background: black;
+}
 .main_banner .container .main_box .main_form button:before {
   content: url("../images/search.svg");
   position: absolute;
@@ -320,6 +323,10 @@ header nav ul li a:hover {
 .steps .steps_box .steps_items {
   text-align: center;
   margin-right: 15px;
+}
+.steps .steps_box .steps_items:hover {
+  transform: scale(1.1);
+  transition-duration: 1.5s;
 }
 @media (max-width: 668px) {
   .steps .steps_box .steps_items {

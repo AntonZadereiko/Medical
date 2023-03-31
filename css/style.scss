@@ -233,6 +233,9 @@ header{
           border-radius: 8px;
           cursor: pointer;
           z-index: 2;
+          &:hover{
+            background: black;
+          }
           &:before{
           content: url("../images/search.svg");
           position: absolute;
@@ -270,6 +273,10 @@ header{
     .steps_items{
       text-align: center;
       margin-right: 15px;
+      &:hover{
+        transform: scale(1.1);
+        transition-duration: 1.5s;
+      }
       @media (max-width: 668px){
         margin-bottom: 15px;
       }
