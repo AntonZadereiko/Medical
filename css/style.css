@@ -279,6 +279,7 @@ header nav ul li a:hover {
   background: #40A3F8;
   border-radius: 8px;
   cursor: pointer;
+  z-index: 2;
 }
 .main_banner .container .main_box .main_form button:before {
   content: url("../images/search.svg");

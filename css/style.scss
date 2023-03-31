@@ -232,6 +232,7 @@ header{
           background: #40A3F8;
           border-radius: 8px;
           cursor: pointer;
+          z-index: 2;
           &:before{
           content: url("../images/search.svg");
           position: absolute;
