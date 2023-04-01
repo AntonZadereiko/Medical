@@ -368,4 +368,102 @@ header nav ul li a:hover {
   max-width: 319px;
 }
 
+.quality {
+  padding-bottom: 143px;
+}
+.quality .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 1190px) {
+  .quality .container {
+    flex-direction: column;
+  }
+}
+.quality .container .quality_image {
+  max-width: 647px;
+}
+.quality .container .quality_image .image {
+  width: 100%;
+}
+@media (max-width: 1190px) {
+  .quality .container .quality_image {
+    margin-bottom: 15px;
+    align-items: center;
+  }
+}
+.quality .container .quality_box {
+  max-width: 506px;
+}
+@media (max-width: 520px) {
+  .quality .container .quality_box {
+    margin-left: 10px;
+  }
+}
+.quality .container .quality_box .quality_title {
+  margin-bottom: 24px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 49px;
+  letter-spacing: 0.02em;
+  color: #3D3D3F;
+}
+.quality .container .quality_box .quality_text {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 3px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: rgba(61, 61, 63, 0.7);
+}
+.quality .container .quality_box .quality_list {
+  margin-bottom: 24px;
+  list-style: none;
+}
+.quality .container .quality_box .quality_list li {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: #3D3D3F;
+  margin-bottom: 14px;
+}
+.quality .container .quality_box .quality_list li:before {
+  content: url("../images/circle.svg");
+  margin-right: 17px;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  top: 4px;
+}
+.quality .container .quality_box .quality_link {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+  text-decoration: none;
+  background: #40A3F8;
+  border-radius: 5px;
+  padding: 15px 22px;
+}
+.quality .container .quality_box .quality_link:hover {
+  background-color: red;
+}
+.quality .container .quality_box .quality_link:after {
+  content: url("../images/arrow.svg");
+  position: relative;
+  left: 8px;
+  display: inline-block;
+}
+
 /*# sourceMappingURL=style.css.map */

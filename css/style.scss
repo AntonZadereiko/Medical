@@ -321,3 +321,95 @@ header{
     }
   }
 }
+.quality{
+  padding-bottom: 143px;
+  .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 1190px){
+      flex-direction: column;
+    }
+    .quality_image{
+      max-width: 647px;
+      .image{
+        width: 100%;
+      }
+      @media (max-width: 1190px){
+        margin-bottom: 15px;
+        align-items: center;
+      }
+    }
+    .quality_box{
+      max-width: 506px;
+      @media (max-width: 520px){
+        margin-left: 10px;
+      }
+      .quality_title{
+        margin-bottom: 24px;
+        font-family: $main_font;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 42px;
+        line-height: 49px;
+        letter-spacing: 0.02em;
+        color: #3D3D3F;
+      }
+      .quality_text{
+        font-family: $main_font;
+        margin-bottom: 3px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        letter-spacing: 0.02em;
+        color: rgba(61, 61, 63, 0.7);
+      }
+      .quality_list{
+        margin-bottom: 24px;
+        list-style: none;
+        li{
+          font-family: $main_font;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 30px;
+          letter-spacing: 0.02em;
+          color: #3D3D3F;
+          margin-bottom: 14px;
+          &:before{
+            content: url("../images/circle.svg");
+            margin-right: 17px;
+            text-align: center;
+            display: inline-block;
+            position: relative;
+            top: 4px;
+          }
+        }
+      }
+      .quality_link{
+        font-family: $main_font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        text-decoration: none;
+        background: #40A3F8;
+        border-radius: 5px;
+        padding: 15px 22px;
+        &:hover{
+          background-color: red;
+        }
+        &:after{
+          content: url("../images/arrow.svg");
+          position: relative;
+          left: 8px;
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+}
