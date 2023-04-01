@@ -466,4 +466,107 @@ header nav ul li a:hover {
   display: inline-block;
 }
 
+.service {
+  padding-bottom: 94px;
+}
+.service .service_title {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 49px;
+  letter-spacing: 0.02em;
+  color: #3D3D3F;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.service .service_text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: rgba(61, 61, 63, 0.7);
+  margin-bottom: 75px;
+}
+.service .service_box {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1047px) {
+  .service .service_box {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+.service .service_box .service_item {
+  background-color: rgba(254, 254, 254, 0.51);
+  max-width: 349px;
+  padding: 61px 0 31px;
+}
+.service .service_box .service_item:nth-child(2) {
+  position: relative;
+  background-color: white;
+  border-radius: 0 0 10px 10px;
+}
+@media (max-width: 698px) {
+  .service .service_box .service_item:nth-child(2) {
+    margin-top: 15px;
+  }
+}
+.service .service_box .service_item:nth-child(2):before {
+  content: "";
+  background: #40A3F8;
+  opacity: 0.5;
+  box-shadow: 0 4px 120px rgba(0, 0, 0, 0.05);
+  border-radius: 0 0 10px 10px;
+  position: absolute;
+  width: 100%;
+  height: 18px;
+  left: 0;
+  bottom: 0;
+}
+.service .service_box .service_item:nth-child(2) .service_photo {
+  max-width: 77px;
+}
+@media (max-width: 1047px) {
+  .service .service_box .service_item:last-of-type {
+    margin-top: 15px;
+  }
+}
+.service .service_box .service_item:last-of-type .service_photo {
+  transform: rotate(-4.38deg);
+  max-width: 73px;
+}
+.service .service_box .service_item .service_photo {
+  margin: auto;
+  max-width: 108px;
+}
+.service .service_box .service_item .service_photo .image {
+  width: 100%;
+  display: block;
+}
+.service .service_box .service_item .service_subtitle {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #3D3D3F;
+  margin-top: 72px;
+  margin-bottom: 23px;
+}
+.service .service_box .service_item .service_desc {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  color: #999999;
+}
+
 /*# sourceMappingURL=style.css.map */
