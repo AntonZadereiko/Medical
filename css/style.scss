@@ -399,8 +399,8 @@ header{
         background: #40A3F8;
         border-radius: 5px;
         padding: 15px 22px;
-        &:hover{
-          background-color: red;
+        &:hover {
+          background: dodgerblue;
         }
         &:after{
           content: url("../images/arrow.svg");
@@ -439,10 +439,6 @@ header{
   .service_box{
     display: flex;
     justify-content: space-between;
-    @media (max-width: 1047px){
-      flex-wrap: wrap;
-      justify-content: space-around;
-    }
     .service_item{
       background-color: rgba(254, 254, 254, 0.51);
       max-width: 349px;
@@ -451,29 +447,12 @@ header{
         position: relative;
         background-color: white;
         border-radius: 0 0 10px 10px;
-        @media (max-width: 698px){
-          margin-top: 15px;
-        }
-        &:before{
-          content: "";
-          background: #40A3F8;
-          opacity: 0.5;
-          box-shadow: 0 4px 120px rgba(0, 0, 0, 0.05);
-          border-radius: 0 0 10px 10px;
-          position: absolute;
-          width: 100%;
-          height: 18px;
-          left: 0;
-          bottom: 0;
-        }
+        padding-bottom: 40px;
         .service_photo{
           max-width: 77px;
         }
       }
       &:last-of-type{
-        @media (max-width: 1047px){
-          margin-top: 15px;
-        }
         .service_photo{
           transform: rotate(-4.38deg);
           max-width: 73px;
@@ -507,6 +486,151 @@ header{
         line-height: 22px;
         text-align: center;
         color: #999999;
+      }
+    }
+  }
+}
+.doctors{
+  padding-bottom: 60px;
+  .container {
+    h3 {
+      font-family: $main_font;
+      text-align: center;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 42px;
+      line-height: 49px;
+      letter-spacing: 0.02em;
+      color: #3D3D3F;
+      margin-bottom: 20px;
+    }
+
+    .doctors_text {
+      font-family: $main_font;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
+      text-align: center;
+      letter-spacing: 0.02em;
+      color: rgba(61, 61, 63, 0.7);
+      margin-bottom: 60px;
+    }
+
+    .doctors_box {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 58px;
+      @media (max-width: 970px){
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+
+
+      .doctors_items {
+        background: rgba(254, 254, 254, 0.51);
+        border: 1px solid #EEEFF1;
+        filter: drop-shadow(0px 4px 120px rgba(0, 0, 0, 0.05));
+        border-radius: 10px;
+
+        &:hover {
+          transform: scale(1.1);
+          transition-duration: 0.5s;
+        }
+
+        &:first-of-type {
+          .doctors_image {
+            margin-top: -10px;
+          }
+
+          h4 {
+            margin-top: -69px;
+          }
+        }
+        &:nth-child(2){
+          @media (max-width: 485px){
+            margin-top: 15px;
+          }
+        }
+        &:nth-child(3){
+          @media (max-width: 727px){
+            margin-top: 15px;
+          }
+        }
+        &:last-of-type{
+          @media (max-width: 970px){
+            margin-top: 15px;
+          }
+        }
+
+        .doctors_image {
+          max-width: 241px;
+
+          img {
+            width: 100%;
+            display: block;
+          }
+        }
+
+        h4 {
+          font-family: $main_font;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 30px;
+          text-align: center;
+          color: #3D3D3F;
+          margin-top: -80px;
+        }
+
+        p {
+          font-family: $main_font;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 22px;
+          text-align: center;
+          color: #999999;
+          margin-bottom: 17px;
+        }
+
+        .doctors_links {
+          display: flex;
+          justify-content: center;
+          margin-bottom: 25px;
+
+          a {
+            margin-right: 11px;
+            text-decoration: none;
+            display: inline-block;
+
+            &:last-of-type {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .doctors_last_link {
+      background: #40A3F8;
+      border-radius: 5px;
+      padding: 9px 21px;
+max-width: 195px;
+      margin: auto;
+      &:hover {
+        background: dodgerblue;
+      }
+      a {
+        text-decoration: none;
+        font-family: $main_font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+        color: #FFFFFF;
+        display: inline-block;
       }
     }
   }
