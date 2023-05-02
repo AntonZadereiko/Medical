@@ -671,4 +671,128 @@ header nav ul li a:hover {
   display: inline-block;
 }
 
+footer {
+  background-color: white;
+  padding: 50px 0;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+footer .container .information p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 180%;
+  color: #646464;
+  margin-bottom: 16px;
+}
+footer .container .information .icons a {
+  margin-right: 16px;
+}
+footer .container .information .icons a:last-of-type {
+  margin-right: 0;
+}
+footer .container .category li {
+  list-style: none;
+  margin-bottom: 24px;
+}
+footer .container .category li:hover {
+  transform: scale(1.1);
+}
+footer .container .category li:first-of-type a {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #323232;
+}
+footer .container .category li a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #646464;
+}
+footer .container .about li {
+  list-style: none;
+  margin-bottom: 24px;
+}
+footer .container .about li:hover {
+  transform: scale(1.1);
+}
+footer .container .about li:first-of-type a {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #323232;
+}
+footer .container .about li a {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #646464;
+  text-decoration: none;
+}
+footer .container .subscribe h3 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #323232;
+  margin-bottom: 19px;
+}
+footer .container .subscribe p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 180%;
+  color: #646464;
+  margin-bottom: 26px;
+  max-width: 277px;
+}
+footer .container .subscribe .subscribe_form {
+  max-width: 292px;
+  display: flex;
+  flex-direction: column;
+}
+footer .container .subscribe .subscribe_form input {
+  background: #FFFFFF;
+  border: 1.1px solid #E1E2E4;
+  border-radius: 5px;
+  padding: 12px 20px;
+  margin-bottom: 12px;
+}
+footer .container .subscribe .subscribe_form input ::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(117, 117, 117, 0.65);
+}
+footer .container .subscribe .subscribe_form button {
+  background: #40A3F8;
+  border: 1.1px solid #E1E2E4;
+  border-radius: 5px;
+  padding: 12px 117px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+}
+
 /*# sourceMappingURL=style.css.map */

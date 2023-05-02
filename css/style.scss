@@ -635,3 +635,142 @@ max-width: 195px;
     }
   }
 }
+footer{
+  background-color: white;
+  padding: 50px 0;
+  .container{
+    display: flex;
+    justify-content: space-between;
+    .information{
+      p{
+        font-family: $main_font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 180%;
+        color: #646464;
+        margin-bottom: 16px;
+      }
+      .icons{
+        a{
+          margin-right: 16px;
+          &:last-of-type{
+            margin-right: 0;
+          }
+        }
+      }
+    }
+    .category{
+      li{
+        list-style: none;
+        margin-bottom: 24px;
+        &:hover{
+          transform: scale(1.1);
+        }
+        &:first-of-type{
+          a{
+            font-family: $main_font;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 16px;
+            color: #323232;
+          }
+        }
+        a{
+          text-decoration: none;
+          font-family: $main_font;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 14px;
+          color: #646464;
+
+        }
+      }
+    }
+    .about{
+      li{
+        list-style: none;
+        margin-bottom: 24px;
+        &:hover{
+          transform: scale(1.1);
+        }
+        &:first-of-type{
+          a{
+            font-family: $main_font;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 16px;
+            color: #323232;
+          }
+        }
+        a{
+          font-family: $main_font;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 14px;
+          color: #646464;
+          text-decoration: none;
+        }
+      }
+    }
+    .subscribe{
+      h3{
+        font-family: $main_font;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 16px;
+        color: #323232;
+        margin-bottom: 19px;
+      }
+      p{
+        font-family: $main_font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 180%;
+        color: #646464;
+        margin-bottom: 26px;
+        max-width: 277px;
+
+      }
+      .subscribe_form{
+        max-width: 292px;
+        display: flex;
+        flex-direction: column;
+        input{
+          background: #FFFFFF;
+          border: 1.1px solid #E1E2E4;
+          border-radius: 5px;
+          padding: 12px 20px;
+          margin-bottom: 12px;
+          ::placeholder{
+            font-family: $main_font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            color: rgba(117, 117, 117, 0.65);
+          }
+        }
+        button{
+          background: #40A3F8;
+          border: 1.1px solid #E1E2E4;
+          border-radius: 5px;
+          padding: 12px 117px;
+          font-family: $main_font;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 16px;
+          letter-spacing: 0.02em;
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+}
